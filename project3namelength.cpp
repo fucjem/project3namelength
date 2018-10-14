@@ -47,8 +47,16 @@ void myswap(person&x, person&y)
 	
 	//y=x
 	y.name=x.name;
-	
-	
+  y.nameLen=x.nameLen;
+  y.numVowels=x.numVowels;
+
+  //z=y
+  z.name=x.name;
+  z.nameLen=x.nameLen;
+  z.numVowels=x.numVowels;
+
+  //Done!
+  
 	//swap (x,y);
 }
 

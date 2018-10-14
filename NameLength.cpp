@@ -33,10 +33,31 @@ int numberofvowels(string myname)
     return numofv;
 }
 
-void myswap()
+
+void myswap(person&x, person&y)
 {
+    person z;
+    
+    // this is whqt ive gotta do to swap: x=z; y=x; z=y;
+    
+    //x=z
+    x.name=z.name;
+    x.nameLen=z.nameLen;
+    x.numVowels=z.numVowels;
+    
+    //y=x
+    y.name=x.name;
+    
+    
     swap (x,y);
 }
+
+
+void sortlength()
+{
+    
+}
+
 
 void input(person being[])
 {
@@ -104,8 +125,8 @@ int main()
     person being[n]; //this variable being is multiple persons
 
 
-    ///input(being); //i am sending it being which is multiple persons
-    ///output(being);
+    input(being); //i am sending it being which is multiple persons
+    output(being);
 
     /*
     string no="no";
@@ -130,3 +151,4 @@ int main()
 
     ///a141 e145 i151 o157 u165
 }
+x
